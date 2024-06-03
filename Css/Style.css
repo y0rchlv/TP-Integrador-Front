@@ -645,6 +645,9 @@ a.page-selected {
 }
 
 @media (max-width:768px) {
+    .navegacion {
+        display: none;
+    }
     .div-deptos {
         display: flex;
         flex-flow: column nowrap;
