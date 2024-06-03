@@ -113,7 +113,7 @@ header {
     font-weight: 100;
 }
 
-.section-mas .caracteristicas {
+.section-mas {
     display: flex;
     margin: 1rem auto;
 }
@@ -142,7 +142,7 @@ header {
     display: flex;
     flex-flow: column nowrap;
     margin: 2rem;
-    width: 50%;
+    width: 100%;
     border-radius: 0.5rem;
     background-color: rgb(180, 193, 218);
 }
@@ -233,7 +233,7 @@ header {
 /**SECTION SEGUNDO-SECTION*/
 .segundo-section {
     display: flex;
-    flex-flow: row nowrap;    
+    flex-flow: row nowrap;
     text-align: center;
     margin: 2rem auto;
     padding: 0 4rem;
@@ -502,7 +502,11 @@ footer {
 
 /* ================= PAGINA ANUNCIOS ========================*/
 .anuncios {
+    display: flex;
+    flex-flow: column nowrap;
     text-align: center;
+    align-items: stretch;
+    width: 100%;
 }
 
 .anuncios h2 {
@@ -510,11 +514,15 @@ footer {
     padding-top: 2rem;
 }
 
-.anuncios .caracteristicas {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: stretch;
+.caracteristicas {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.item-main {
+    width: 100%;
 }
 
 .anuncios .caracteristicas .item-main {
@@ -538,73 +546,6 @@ footer {
     }
 }
 
-/* ====================== PAGINA VENTAS =====================*/
-
-.sales-container {
-    justify-content: center;
-    margin: 3rem auto;
-}
-
-.sales-container h2 {
-    text-align: right;
-    font-style: italic;
-}
-
-.house-card {
-    display: flex;
-}
-
-.house-card .info {
-    background-color: rgb(224, 224, 224);
-    padding: 14rem 0 0 7rem;
-
-    font-weight: 600;
-}
-
-.house-card .info span {
-    color: rgb(215, 141, 2);
-}
-
-.sale {
-    text-decoration: none;
-    padding: 1rem 3rem;
-    margin-top: 10rem;
-    display: block;
-    text-align: center;
-    background-color: rgb(44, 88, 230);
-}
-
-.attributes {
-    font-size: 5rem;
-    display: flex;
-    justify-content: space-between;
-    margin: 6rem 0;
-    text-align: center;
-}
-
-.house-card-2 {
-    display: flex;
-    margin-bottom: 10rem;
-}
-
-.house-card-2 p {
-    margin: 10rem 0 0 3rem;
-    text-align: justify;
-}
-
-.house-card,
-.house-card-2,
-.attributes {
-    view-timeline-name: --image;
-    view-timeline-axis: block;
-    animation-timeline: --image;
-    animation-name: display-img;
-    animation-range: entry 25% cover 50%;
-    animation-fill-mode: both;
-}
-
-
-
 /* ESTILOS GLOBALES PARA OCULTAR O MOSTRAR */
 .show {
     display: block;
@@ -622,93 +563,7 @@ a.page-selected {
     color: rgb(44, 88, 230);
 }
 
-
-
 /** =============================== MEDIA QUERYS ===========================*/
-/* @media (max-width: 11880px) {
-    .encuentra {
-        height: 40vh;
-    }
-
-    .quote-section {
-        padding-top: 2rem;
-    }
-
-    .quote img {
-        position: relative;
-        top: -5rem;
-        left: 6rem;
-    }
-
-
-}
-
-@media (max-width: 1790px) {
-    .col-xlg-1 {
-        width: 8.33%;
-    }
-
-    .col-xlg-2 {
-        width: 16.66%;
-    }
-
-    .col-xlg-3 {
-        width: 25%;
-    }
-
-    .col-xlg-4 {
-        width: 33.33%;
-    }
-
-    .col-xlg-5 {
-        width: 41.66%;
-    }
-
-    .col-xlg-6 {
-        width: 50%;
-    }
-
-    .col-xlg-7 {
-        width: 58.33%;
-    }
-
-    .col-xlg-8 {
-        width: 66.66%;
-    }
-
-    .col-xlg-9 {
-        width: 75%;
-    }
-
-    .col-xlg-10 {
-        width: 83.33%;
-    }
-
-    .col-xlg-11 {
-        width: 91.66%;
-    }
-
-    .col-xlg-12 {
-        width: 100%;
-    }
-
-    .section-mas .item-caracteristicas {
-        margin: 0 1rem;
-    }
-
-    .encuentra {
-        height: 50vh;
-    }
-
-
-    .us-story {
-        d
-    }
-
-    .us-story img {}
-
-    .us-story p {}
-} */
 
 @media (max-width: 1199px) {
     .col-lg-1 {
@@ -757,7 +612,7 @@ a.page-selected {
 
     .col-lg-12 {
         width: 100%;
-    }   
+    }
 
     .section-mas .item-caracteristicas {
         margin: 0 1rem;
@@ -802,6 +657,11 @@ a.page-selected {
 
     .us-story p {
         width: 100%;
+    }
+
+    .caracteristicas {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
@@ -859,12 +719,12 @@ a.page-selected {
     }
 
     .caracteristicas {
-        flex-direction: column;
+        grid-template-columns: 1fr 1fr;
     }
 
-    .item-main {
+    /* .item-main {
         margin: 1rem auto;
-    }
+    } */
 
     .encuentra {
         height: 60vh;
@@ -934,12 +794,12 @@ a.page-selected {
     .col-s-12 {
         width: 100%;
     }
-    
+
     .Navegacion {
         display: none;
     }
 
-    .section-mas .caracteristicas,
+    .section-mas,
     .segundo-section article {
         flex-direction: column;
         margin: 0 auto;
@@ -990,6 +850,11 @@ a.page-selected {
 
     .us-story p {
         width: 100%;
+    }
+
+    .caracteristicas {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
@@ -1046,7 +911,7 @@ a.page-selected {
         width: 100%;
     }
 
-    .section-mas .caracteristicas,
+    .section-mas,
     .segundo-section article {
         flex-direction: column;
         margin: 0 auto;
