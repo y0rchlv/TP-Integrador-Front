@@ -581,67 +581,7 @@ a.page-selected {
 
 
 @media (max-width: 991px) {
-    /* .Navegacion {
-        display: none;
-    }
-    
-    .section-mas,
-    .segundo-section article {
-        flex-direction: column;
-        margin: 0 auto;
-    }
-    
-    .encuentra {
-        height: 55vh;
-    }
-    
-    .segundo-section article {
-        box-shadow: 1rem 1rem rgba(138, 138, 138, .2);
-        margin-bottom: 1rem;
-    }
-    
-    .footer-items {
-        flex-direction: column;
-        margin: 1rem auto;
-    }
-    
-    .footer-items .navegacion,
-    .footer-items p {
-        margin: 1rem auto;
-    }
-    
-    .quote img {
-        position: relative;
-        top: -6rem;
-        left: 6rem;
-    }
-    
-    .container-us {
-        padding: 2rem;
-        align-items: stretch;
-    }
-    
-    .us-story {
-        display: flex;
-        flex-flow: column nowrap;
-        align-self: stretch;
-        gap: 2rem;
-    }
-    
-    .us-story img {
-        height: auto;
-        width: 100%;
-        min-width: 50vw;
-    }
-    
-    .us-story p {
-        width: 100%;
-    }
-    
-    .caracteristicas {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    } */
+   
 }
 
 @media (max-width:768px) {
@@ -676,42 +616,7 @@ a.page-selected {
     }
 }
 @media (max-width: 575px) {
-    /* .section-mas,
-    .segundo-section article {
-        flex-direction: column;
-        margin: 0 auto;
+    header h1 {
+        text-align: center;
     }
-
-    .section-mas h2 {
-        font-size: 2.5rem;
-    }
-
-    .encuentra {
-        height: 65vh;
-    }
-
-    .segundo-section article {
-        box-shadow: 1rem 1rem rgba(138, 138, 138, .2);
-        margin-bottom: 1rem;
-    }
-
-    .footer-items {
-        flex-direction: column;
-        margin: 1rem auto;
-    }
-
-    .footer-items .navegacion,
-    .footer-items p {
-        margin: 1rem auto;
-    }
-
-    .quote-section {
-        width: 100%;
-    }
-
-    .quote img {
-        position: relative;
-        top: -8rem;
-        left: 4rem;
-    } */
 }
