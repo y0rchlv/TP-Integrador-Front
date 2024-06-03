@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,10 @@
     <link rel="stylesheet" href="Css/Style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <header class="other">
-        <div class="contenido-header">
+    <header class="slim">
+        <div class="div-header">
             <div class="barra">
                 <div class="logo">
                     <a href="/">
@@ -17,7 +19,7 @@
                         <p>MAXWELL <span>Bienes Raices</span></p>
                     </a>
                 </div>
-                <nav class="Navegacion">
+                <nav class="navegacion">
                     <a href="Nosotros.html">Nosotros</a>
                     <a href="Anuncios.html">Anuncios</a>
                     <a href="Contacto.html">Contacto</a>
@@ -25,6 +27,7 @@
             </div>
         </div>
     </header>
+
     <main class="container-contact">
         <h2>Escribenos tu consulta y nos pondremos en contacto a la brevedad.</h2>
         <div id="contacto" class="contacto">
@@ -34,30 +37,30 @@
                     <input type="file" class="custom-file-input" id="picture">
                     <div class="" id="picture-feedback"></div>
                 </div>
-                <div class="form-item col-lg-12">
+                <div class="form-item">
                     <!-- <label for="name">Nombre</label> -->
-                    <input type="text" class="form-control col-xs-7 col-s-8 col-m-9 col-lg-7 col-xlg-7" id="name" placeholder="Nombre" >
-                    <div class="name-feedback hidden" id="name-feedback">    
+                    <input type="text" class="form-control" id="name" placeholder="Nombre">
+                    <div class="name-feedback hidden" id="name-feedback">
                         El campo <span>nombre</span> es requerido
                     </div>
                 </div>
-                <div class="form-item  col-lg-12">
+                <div class="form-item">
                     <!-- <label for="lastName">Apellido</label> -->
-                    <input type="text" class="form-control col-xs-7 col-s-8 col-m-9 col-lg-7 col-xlg-7" id="lastName" placeholder="Apellido" >
+                    <input type="text" class="form-control" id="lastName" placeholder="Apellido">
                     <div class="lastName-feedback hidden" id="lastName-feedback">
                         El campo <span>apellido</span> es requerido
                     </div>
                 </div>
-                <div class="form-item col-lg-12">
+                <div class="form-item">
                     <!-- <label for="email">Email</label> -->
-                    <input type="text" class="form-control col-xs-7 col-s-8 col-m-9 col-lg-7 col-xlg-7" id="email" placeholder="Email" >
+                    <input type="text" class="form-control" id="email" placeholder="Email">
                     <div class="email-feedback hidden" id="email-feedback">
                         El campo <span>email</span> es requerido
                     </div>
-                </div>         
+                </div>
                 <div class="form-item form-group">
                     <!-- <label for="country">País:</label> -->
-                    <select class="custom-select col-xs-7 col-s-8 col-m-9" id="country" >
+                    <select class="custom-select" id="country">
                         <option class="select-option" value="">-- País --</option>
                         <option class="select-option" value="arg">Argentina</option>
                         <option class="select-option" value="fr">Francia</option>
@@ -67,9 +70,10 @@
                         El campo <span>país</span> es requerido
                     </div>
                 </div>
-                <div class="form-item col-md-6 mb-3">
+                <div class="form-item">
                     <!-- <label for="text-comment">Comentario</label> -->
-                    <textarea name="textarea" id="text-comment" rows="10" cols="50" placeholder="Escribe tu pregunta"></textarea>
+                    <textarea name="textarea" id="text-comment" rows="10" cols="50"
+                        placeholder="Escribe tu pregunta"></textarea>
                     <div class="text-comment-feedback hidden" id="text-comment-feedback">
                         El campo <span>comentario</span> es requerido
                     </div>
@@ -79,8 +83,8 @@
                     <label class="custom-control-label" for="check-recive">Recibir notificaciones</label>
                 </div>
                 <div class="submit">
-                    <input type="submit" class="col-xs-4 col-s-6 col-m-7 col-lg-8 col-xlg-6" value="Enviar" id="btn-submit">
-                </div> 
+                    <input type="submit" class="" value="Enviar" id="btn-submit">
+                </div>
             </form>
         </div>
         <div id="msg-sent" class="msg-sent">
@@ -102,4 +106,5 @@
     <script src="Js/contact-script.js"></script>
     <script src="https://kit.fontawesome.com/fda90ba3ce.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
