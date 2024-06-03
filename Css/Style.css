@@ -115,7 +115,9 @@ header {
 
 .section-mas .caracteristicas {
     display: flex;
-    margin: 1rem auto;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: stretch;
 }
 
 .item-caracteristicas h3 {
