@@ -222,7 +222,7 @@ header {
     gap: 2rem;
     justify-content: center;
     text-align: center;
-    padding: 2rem;    
+    padding: 2rem;
 }
 
 .blog h2 {
@@ -524,7 +524,7 @@ footer {
     width: 100%;
 }
 
-.anuncios .caracteristicas card {
+.card {
     view-timeline-name: --image;
     view-timeline-axis: block;
     animation-timeline: --image;
@@ -574,20 +574,20 @@ a.page-selected {
         flex-flow: column nowrap;
     }
 
-    .blog, .testimoniales {
+    .blog,
+    .testimoniales {
         width: 100%;
     }
 }
 
 
-@media (max-width: 991px) {
-   
-}
+@media (max-width: 991px) {}
 
 @media (max-width:768px) {
     .navegacion {
         display: none;
     }
+  
     .div-deptos {
         display: flex;
         flex-flow: column nowrap;
@@ -615,6 +615,7 @@ a.page-selected {
         width: 100%;
     }
 }
+
 @media (max-width: 575px) {
     header h1 {
         text-align: center;
