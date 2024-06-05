@@ -208,7 +208,7 @@ header {
     border-radius: 0.5rem;
 }
 
-/*** Wrapper Blog and test ***/
+/*** Div Blog and test ***/
 .blog-test {
     display: flex;
     flex-flow: row nowrap;
@@ -220,7 +220,7 @@ header {
     width: 50%;
     flex-flow: row wrap;
     gap: 2rem;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
     padding: 2rem;
 }
@@ -233,26 +233,30 @@ header {
     font-weight: 200;
 }
 
-article.card {
+.bCard {
     display: flex;
     width: 48%;
     flex-flow: column nowrap;
 }
 
-div.info {
+.binfo {
     display: flex;
     flex-flow: column nowrap;
     gap: 2rem;
+    background-color: rgb(179, 179, 180);
+    border-radius: 0.3rem;
+    padding: 2rem;
+    text-align: left;
 }
 
-div.info h4 {
+.binfo h4 {
     font-size: 2.5rem;
     font-weight: 900;
     padding-bottom: 1.7rem;
     border-bottom: .6rem solid rgb(44, 88, 230);
 }
 
-div.info em {
+.binfo em {
     color: rgb(44, 88, 230);
 }
 
@@ -432,9 +436,11 @@ footer {
     font-weight: 600;
 }
 
-.msg-sent {
+.msg-sent {    
     display: flex;
     flex-flow: column nowrap;
+    margin: 0 auto;
+    width: 30rem;
     gap: 2rem;
     background-color: rgba(48, 48, 48, 0.7);
     padding: 2rem;
@@ -458,10 +464,12 @@ footer {
 
 @keyframes slideInLeft {
     from {
+        opacity: 0;
         transform: translateX(-100vw);
     }
 
     to {
+        opacity: 100;
         transform: translateX(0);
     }
 }
@@ -611,7 +619,7 @@ a.page-selected {
         flex-flow: column nowrap;
     }
 
-    article.card {
+    .bCard {
         width: 100%;
     }
 }
