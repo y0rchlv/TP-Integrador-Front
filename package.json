@@ -1,0 +1,24 @@
+{
+  "name": "tp-integrador-front",
+  "version": "1.0.0",
+  "description": "Primer node para el TP",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/y0rchlv/TP-integrador-front.git"
+  },
+  "keywords": [
+    "tp",
+    "integrador",
+    "front"
+  ],
+  "author": "Yorch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/y0rchlv/TP-integrador-front/issues"
+  },
+  "homepage": "https://github.com/y0rchlv/TP-integrador-front#readme"
+}
